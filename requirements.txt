@@ -1,0 +1,12 @@
+streamlit>=1.40,<2
+google-genai>=1.0,<2
+pypdf>=5.0,<6
+sentence-transformers>=3.0,<6
+chromadb>=0.5,<2
+faster-whisper>=1.0,<2
+pydantic>=2.7,<3
+python-dotenv>=1.0,<2
+pandas>=2.2,<3
+numpy>=1.26,<3
+plotly>=5.20,<7
+supabase>=2.0,<3

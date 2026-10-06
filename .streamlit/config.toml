@@ -1,0 +1,15 @@
+# Pivio theme. Light "Executive Kinetic" look (from the Stitch export).
+# Keep these hex values in sync with PALETTE in core/ui.py (tests/test_theme_static.py checks it).
+# Fine-grained styling (cards, badges, fonts, nav) lives in the central CSS in core/ui.py.
+[theme]
+base = "light"
+primaryColor = "#0D9488"
+backgroundColor = "#F8FAFC"
+secondaryBackgroundColor = "#FFFFFF"
+textColor = "#0F172A"
+font = "sans serif"
+borderColor = "#94A3B8"
+showWidgetBorder = true
+
+[server]
+maxUploadSize = 10
