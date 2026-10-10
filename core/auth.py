@@ -95,8 +95,10 @@ def sign_up(email: str, password: str) -> str:
         _send_verification(res["idToken"])
     except AuthError:
         pass
-    return ("Account created. We sent a verification link to " + email + ". Click it (check spam too), "
-            "then come back and log in.")
+    return (
+    f"Account created successfully! A verification email was requested for {email}. "
+    "Please check your inbox and spam/junk folder for the verification link. "
+    "Click the link before logging in." )
 
 
 def sign_in(email: str, password: str) -> None:
