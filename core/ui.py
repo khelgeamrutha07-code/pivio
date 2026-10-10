@@ -359,10 +359,17 @@ def _handle_signup(email: str, pw: str) -> None:
         ok = True
     except auth.AuthError as exc:
         show_error(str(exc))
+    
     if ok:
         if auth.current_user():
             st.rerun()
-        st.warning(msg)
+        st.success("Account created successfully!")
+        st.info(
+               "📩 Please check your email inbox for the verification link. "
+               "If you don't see it, check your spam or junk folder. "
+                "Verify your email before logging in."
+              )
+
 
 
 def _sidebar(user: dict) -> None:
